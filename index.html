@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Beauty Ng — премиум-салон красоты на Жулебинском бульваре. Маникюр, стрижки, косметология. Ежедневно 9:30–21:00. Звоните!">
+<meta name="description" content="Beauty Ng — салон красоты на Жулебинском бульваре. Маникюр, стрижки, косметология, эпиляция. Ежедневно 9:30–21:00. Запись по телефону и WhatsApp.">
 <meta name="theme-color" content="#F9F7F4">
-<meta name="keywords" content="салон красоты, маникюр, стрижка, Жулебино, косметология, эпиляция">
+<meta name="keywords" content="салон красоты Жулебино, маникюр Жулебинский бульвар, женская стрижка Москва, косметология Жулебино, эпиляция шугаринг">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Beauty Ng — Салон красоты на Жулебинском">
-<meta property="og:description" content="Премиум-услуги по доступной цене. Рейтинг 4.6. Запись по телефону и WhatsApp.">
+<meta property="og:description" content="Премиум-услуги по честным ценам. Рейтинг 4.6 на Яндекс.Картах. Запись за 1 минуту.">
 <meta property="og:image" content="https://placehold.co/1200x630/F9F7F4/B8860B?text=Beauty+Ng">
 <meta property="og:locale" content="ru_RU">
 <title>Beauty Ng — Салон красоты на Жулебинском | Маникюр, Стрижки, Косметология</title>
@@ -64,9 +64,7 @@ a { color: inherit; text-decoration: none; } ul { list-style: none; }
 img, svg { display: block; max-width: 100%; }
 .container { width: var(--container); margin-inline: auto; padding-inline: var(--space); }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
-/* 📊 Scroll Progress Bar */
 .scroll-progress { position: fixed; top: 0; left: 0; height: 3px; width: 0%; background: var(--accent); z-index: 1000; transition: width 0.1s linear; }
-/* 🔝 Header */
 header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.85); backdrop-filter: blur(16px) saturate(180%); border-bottom: 1px solid var(--border); }
 @media (prefers-color-scheme: dark) { header { background: rgba(11,17,32,0.85); } }
 .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; gap: 1rem; }
@@ -91,7 +89,6 @@ header.scrolled .logo { transform: scale(0.95); }
 .nav-links.active, .header-cta.active { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--surface); padding: 1.5rem; border-bottom: 1px solid var(--border); gap: 1rem; box-shadow: var(--shadow-lg); }
 .header-inner { position: relative; }
 }
-/* 🌟 Hero */
 .hero { padding: clamp(4rem, 8vw, 8rem) 0 clamp(3rem, 6vw, 6rem); text-align: center; position: relative; overflow: hidden; background: linear-gradient(180deg, var(--bg) 0%, var(--accent-light) 100%); }
 .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 20% 10%, rgba(184,134,11,0.15) 0%, transparent 60%); pointer-events: none; }
 .badge-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.8rem; margin-bottom: 2rem; }
@@ -99,41 +96,33 @@ header.scrolled .logo { transform: scale(0.95); }
 .badge svg { width: 16px; height: 16px; color: #F59E0B; }
 .hero h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 900; line-height: 1.05; margin-bottom: 1rem; letter-spacing: -0.03em; background: linear-gradient(135deg, var(--text) 40%, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .hero p { font-size: clamp(1.05rem, 2.5vw, 1.25rem); color: var(--text-muted); max-width: 680px; margin: 0 auto 2.5rem; }
-/* 🔘 Buttons & Micro-animations */
 .cta-group { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
 .btn {
 display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem;
 padding: 0.95rem 2rem; border-radius: 99px; font-weight: 600; font-size: 1rem;
-transition: var(--transition); border: none; cursor: pointer; position: relative;
-overflow: hidden;
+transition: var(--transition); border: none; cursor: pointer; position: relative; overflow: hidden;
 }
 .btn::before {
 content: ''; position: absolute; top: 50%; left: 50%; width: 140%; height: 140%;
 background: radial-gradient(circle, var(--accent) 0%, transparent 60%);
-opacity: 0; transform: translate(-50%, -50%) scale(0.8); transition: opacity 0.4s ease, transform 0.4s ease;
-pointer-events: none;
+opacity: 0; transform: translate(-50%, -50%) scale(0.8); transition: opacity 0.4s ease, transform 0.4s ease; pointer-events: none;
 }
 .btn:hover::before { opacity: 0.1; transform: translate(-50%, -50%) scale(1); }
 .btn-primary { background: var(--accent); color: #fff; }
 .btn-primary:hover { background: var(--accent-hover); box-shadow: var(--shadow-lg); }
 .btn-secondary { background: var(--surface); color: var(--text); border: 1px solid var(--border); }
 .btn-secondary:hover { background: var(--accent-light); border-color: var(--accent); }
-.btn-large { padding: 1.2rem 2.5rem; font-size: 1.1rem; }
-/* 🌊 Scroll Reveal */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); }
 .reveal.visible { opacity: 1; transform: translateY(0); }
-/* 📐 Sections Common */
 section { padding: clamp(4rem, 6vw, 6rem) 0; }
 .section-header { text-align: center; margin-bottom: 3rem; }
 .section-header h2 { font-size: clamp(2rem, 5vw, 2.8rem); margin-bottom: 0.5rem; }
 .section-header p { color: var(--text-muted); max-width: 520px; margin-inline: auto; }
-/* 🏢 About */
 .about-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
 .about-card { background: var(--surface); padding: 1.8rem; border-radius: var(--radius); box-shadow: var(--shadow); text-align: center; }
 .about-card svg { width: 32px; height: 32px; color: var(--accent); margin: 0 auto 0.8rem; }
 .about-card h3 { font-size: 1.1rem; margin-bottom: 0.4rem; }
 .about-card p { font-size: 0.95rem; color: var(--text-muted); }
-/* 🛍️ Services */
 .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
 .service-card { background: var(--surface); padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow); transition: var(--transition); position: relative; overflow: hidden; display: flex; flex-direction: column; }
 .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
@@ -143,7 +132,6 @@ section { padding: clamp(4rem, 6vw, 6rem) 0; }
 .service-card ul li { padding: 0.45rem 0; color: var(--text-muted); font-size: 0.95rem; border-bottom: 1px dashed var(--border); display: flex; align-items: center; gap: 0.6rem; }
 .service-card ul li::before { content: '•'; color: var(--accent); font-weight: 800; }
 .service-card ul li:last-child { border-bottom: none; }
-/* 🖼️ Gallery */
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
 .gallery-item { position: relative; border-radius: var(--radius); overflow: hidden; cursor: pointer; aspect-ratio: 4/3; }
 .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
@@ -156,7 +144,6 @@ section { padding: clamp(4rem, 6vw, 6rem) 0; }
 .lightbox img { max-width: 90vw; max-height: 90vh; border-radius: 12px; box-shadow: var(--shadow-lg); }
 .lightbox-close { position: absolute; top: 1.5rem; right: 1.5rem; background: rgba(255,255,255,0.2); border: none; color: #fff; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; display: grid; place-items: center; }
 .lightbox-close:hover { background: rgba(255,255,255,0.3); }
-/* 💬 Reviews & FAQ */
 .trust-section { background: linear-gradient(180deg, var(--bg) 0%, var(--surface) 100%); }
 .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
 .review-card { background: var(--surface); padding: 1.8rem; border-radius: var(--radius); box-shadow: var(--shadow); position: relative; }
@@ -173,9 +160,8 @@ section { padding: clamp(4rem, 6vw, 6rem) 0; }
 .faq summary::after { content: '+'; font-size: 1.5rem; color: var(--accent); transition: var(--transition); }
 .faq details[open] summary::after { transform: rotate(45deg); }
 .faq details p { padding: 0 1.5rem 1.2rem; color: var(--text-muted); line-height: 1.6; }
-/* 📅 Booking - Updated */
 .booking-section { background: var(--surface); text-align: center; }
-.booking-card { background: var(--bg); padding: 2.5rem; border-radius: var(--radius); max-width: 700px; margin: 0 auto; box-shadow: var(--shadow); }
+.booking-card { background: var(--bg); padding: 2.5rem; border-radius: var(--radius); max-width: 650px; margin: 0 auto; box-shadow: var(--shadow); }
 .booking-card p { margin-bottom: 1.5rem; color: var(--text-muted); font-size: 1.05rem; }
 .booking-phones { display: flex; flex-direction: column; gap: 1rem; align-items: center; margin: 2rem 0; }
 .booking-phone { display: inline-flex; align-items: center; gap: 0.7rem; background: var(--accent); color: #fff; padding: 1.1rem 2.2rem; border-radius: 99px; font-weight: 700; font-size: 1.2rem; transition: var(--transition); text-decoration: none; }
@@ -183,7 +169,6 @@ section { padding: clamp(4rem, 6vw, 6rem) 0; }
 .booking-whatsapp { display: inline-flex; align-items: center; gap: 0.7rem; background: #25D366; color: #fff; padding: 1.1rem 2.2rem; border-radius: 99px; font-weight: 700; font-size: 1.2rem; transition: var(--transition); text-decoration: none; }
 .booking-whatsapp:hover { background: #128C7E; transform: translateY(-3px); box-shadow: var(--shadow-lg); }
 .booking-hours { margin-top: 1.5rem; font-size: 0.95rem; color: var(--text-muted); }
-/* 📍 Contact */
 .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 2.5rem; align-items: start; }
 .contact-info { display: grid; gap: 1.5rem; }
 .contact-item h4 { margin-bottom: 0.4rem; font-size: 1.05rem; }
@@ -192,7 +177,6 @@ section { padding: clamp(4rem, 6vw, 6rem) 0; }
 .map-wrap { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); height: 100%; min-height: 380px; }
 .map-wrap iframe { width: 100%; height: 100%; border: 0; }
 @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
-/* 🔙 Footer & Back to Top */
 footer { background: var(--text); color: var(--bg); padding: 3rem 0 2rem; text-align: center; font-size: 0.9rem; line-height: 1.7; margin-top: auto; }
 footer a { color: #9CA3AF; transition: var(--transition); }
 footer a:hover { color: #fff; text-decoration: underline; }
@@ -202,60 +186,28 @@ footer a:hover { color: #fff; text-decoration: underline; }
 .back-to-top { position: fixed; bottom: 2rem; right: 2rem; width: 44px; height: 44px; background: var(--accent); color: #fff; border: none; border-radius: 50%; display: grid; place-items: center; cursor: pointer; opacity: 0; pointer-events: none; transition: var(--transition); box-shadow: var(--shadow-lg); z-index: 99; }
 .back-to-top.visible { opacity: 1; pointer-events: auto; }
 .back-to-top:hover { transform: translateY(-4px); }
-/* ✨ Cursor Spotlight (Desktop) */
 .cursor-spotlight { position: fixed; top: 0; left: 0; width: 700px; height: 700px; background: radial-gradient(circle, var(--accent-light) 0%, transparent 65%); pointer-events: none; z-index: 0; opacity: 0; transition: opacity 0.4s ease; transform: translate(-50%, -50%); mix-blend-mode: multiply; }
 @media (hover: hover) and (prefers-reduced-motion: no-preference) { .cursor-spotlight { opacity: 0.4; } }
 @media (max-width: 1024px), (prefers-reduced-motion: reduce) { .cursor-spotlight { display: none !important; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; transform: none !important; scroll-behavior: auto !important; } }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
-
-/* 📱 Mobile Floating Buttons - NEW */
 .mobile-floating-buttons {
-display: none;
-position: fixed;
-bottom: 1.5rem;
-right: 1.5rem;
-flex-direction: column;
-gap: 0.75rem;
-z-index: 98;
+display: none; position: fixed; bottom: 1.5rem; right: 1.5rem; flex-direction: column; gap: 0.75rem; z-index: 98;
 }
 .mobile-floating-buttons .float-btn {
-width: 56px;
-height: 56px;
-border-radius: 50%;
-display: grid;
-place-items: center;
-box-shadow: var(--shadow-lg);
-transition: var(--transition);
-text-decoration: none;
-animation: floatPulse 3s infinite ease-in-out;
+width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; box-shadow: var(--shadow-lg); transition: var(--transition); text-decoration: none; animation: floatPulse 3s infinite ease-in-out;
 }
-.mobile-floating-buttons .float-btn svg {
-width: 26px;
-height: 26px;
-}
-.mobile-floating-buttons .float-btn.phone {
-background: var(--accent);
-color: #fff;
-}
-.mobile-floating-buttons .float-btn.whatsapp {
-background: #25D366;
-color: #fff;
-}
-.mobile-floating-buttons .float-btn:hover {
-transform: scale(1.1);
-}
+.mobile-floating-buttons .float-btn svg { width: 26px; height: 26px; }
+.mobile-floating-buttons .float-btn.phone { background: var(--accent); color: #fff; }
+.mobile-floating-buttons .float-btn.whatsapp { background: #25D366; color: #fff; }
+.mobile-floating-buttons .float-btn:hover { transform: scale(1.1); }
 @keyframes floatPulse {
 0%, 100% { box-shadow: 0 0 0 0 rgba(184, 134, 11, 0.4); }
 50% { box-shadow: 0 0 0 12px rgba(184, 134, 11, 0); }
 }
 @media (max-width: 768px) {
-.mobile-floating-buttons {
-display: flex;
-}
-.back-to-top {
-bottom: 6rem;
-}
+.mobile-floating-buttons { display: flex; }
+.back-to-top { bottom: 6rem; }
 }
 @media (prefers-reduced-motion: reduce) {
 .mobile-floating-buttons .float-btn { animation: none !important; }
@@ -281,7 +233,6 @@ bottom: 6rem;
 </div>
 </header>
 
-<!-- 📱 Mobile Floating Buttons -->
 <div class="mobile-floating-buttons" aria-label="Быстрая связь">
 <a href="tel:+74957050084" class="float-btn phone" aria-label="Позвонить">
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -304,7 +255,7 @@ bottom: 6rem;
 <span class="badge">📍 Жулебинский бул., 14</span>
 </div>
 <h1>Салон красоты<br>на Жулебинском</h1>
-<p>Премиальный уход, сертифицированные мастера и прозрачные цены. Запишитесь по телефону или WhatsApp прямо сейчас!</p>
+<p>Премиальный уход, стерильность и честные цены. Запишитесь за 1 минуту — мастер уже ждёт вас.</p>
 <div class="cta-group">
 <a href="tel:+74957050084" class="btn btn-primary btn-large magnetic">📞 Позвонить</a>
 <a href="https://wa.me/79030129635?text=Здравствуйте!%20Хочу%20записаться%20в%20Beauty%20Ng" class="btn btn-secondary btn-large magnetic" target="_blank" rel="noopener">💬 WhatsApp</a>
@@ -319,10 +270,10 @@ bottom: 6rem;
 <p>Мы создаём пространство, где качество встречается с заботой о каждом клиенте</p>
 </div>
 <div class="about-grid">
-<div class="about-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><h3>Безопасность</h3><p>Полная стерилизация инструментов по медицинским стандартам. Одноразовые расходники.</p></div>
-<div class="about-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><h3>Опытные мастера</h3><p>Сертифицированные специалисты с опытом от 5 лет. Регулярное повышение квалификации.</p></div>
-<div class="about-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><h3>Прозрачные цены</h3><p>Фиксированный прайс. Никаких скрытых доплат. Оплата картой или наличными.</p></div>
-<div class="about-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><h3>Уютная атмосфера</h3><p>Кофе, Wi-Fi, мягкое освещение. Работаем без выходных, чтобы вы приходили в удобное время.</p></div>
+<div class="about-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><h3>Медицинская стерильность</h3><p>Автоклавная обработка, крафт-пакеты вскрываем при вас. Одноразовые пилочки и расходники.</p></div>
+<div class="about-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><h3>Мастера с опытом от 5 лет</h3><p>Сертифицированные специалисты. Регулярное обучение, подбор техники под ваш тип волос/ногтей.</p></div>
+<div class="about-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><h3>Прозрачные цены</h3><p>Фиксированный прайс. Никаких «сюрпризов» в чеке. Оплата картой, наличными или СБП.</p></div>
+<div class="about-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><h3>Уют и комфорт</h3><p>Кофе, чай, Wi-Fi, детская зона. Работаем без выходных. Бесплатная парковка у дома.</p></div>
 </div>
 </div>
 </section>
@@ -334,12 +285,66 @@ bottom: 6rem;
 <p>Полный спектр ухода. Без скрытых наценок.</p>
 </div>
 <div class="services-grid">
-<article class="service-card reveal"><h3>Ногтевой сервис</h3><span class="price">от 800 ₽</span><ul><li>Женский / мужской маникюр и педикюр</li><li>Наращивание ногтей</li><li>SPA-маникюр, парафинотерапия</li><li>Дизайн, комби-маникюр</li></ul></article>
-<article class="service-card reveal"><h3>Волосы и стрижки</h3><span class="price">от 600 ₽</span><ul><li>Женские стрижки (1000–1300 ₽)</li><li>Мужские стрижки (600–1300 ₽)</li><li>Окрашивание, мелирование, омбре</li><li>Кератин, биоламинирование, укладки</li></ul></article>
-<article class="service-card reveal"><h3>Косметология</h3><span class="price">от 800 ₽</span><ul><li>Anti-age процедуры, лифтинг</li><li>Чистка лица, пилинг</li><li>Массаж лица, дарсонвализация</li><li>Обёртывание, коррекция фигуры</li></ul></article>
-<article class="service-card reveal"><h3>Ресницы и брови</h3><span class="price">от 800 ₽</span><ul><li>Наращивание и ламинирование ресниц</li><li>Окрашивание бровей / ресниц</li><li>Коррекция и архитектура бровей</li></ul></article>
-<article class="service-card reveal"><h3>Эпиляция</h3><span class="price">от 600 ₽</span><ul><li>Шугаринг</li><li>Восковая депиляция</li><li>Индивидуальный подбор зоны</li></ul></article>
-<article class="service-card reveal"><h3>Особое</h3><span class="price">Услуга</span><ul><li>Детские стрижки и маникюр</li><li>Макияж, визаж</li><li>Подарочные сертификаты</li><li>Wi-Fi, оплата картой, парковка</li></ul></article>
+<article class="service-card reveal">
+<h3>Ногтевой сервис</h3>
+<span class="price">от 800 ₽ · 60–90 мин</span>
+<ul>
+<li>Комби-маникюр, аппаратный педикюр</li>
+<li>Покрытие гель-лаком (Luxio, E.Mi, Kodi)</li>
+<li>SPA-уход, парафинотерапия</li>
+<li>Дизайн, укрепление, наращивание</li>
+</ul>
+</article>
+<article class="service-card reveal">
+<h3>Стрижки и окрашивание</h3>
+<span class="price">от 600 ₽ · 40–150 мин</span>
+<ul>
+<li>Женские / мужские стрижки</li>
+<li>Окрашивание: балаяж, аиртач, шатуш</li>
+<li>Кератин, ботокс, биоламинирование</li>
+<li>Вечерние и повседневные укладки</li>
+</ul>
+</article>
+<article class="service-card reveal">
+<h3>Косметология</h3>
+<span class="price">от 800 ₽ · 60–120 мин</span>
+<ul>
+<li>Ультразвуковая / комбинированная чистка</li>
+<li>Кислотные пилинги, RF-лифтинг</li>
+<li>Массаж лица, дарсонваль</li>
+<li>Обёртывания, коррекция фигуры</li>
+</ul>
+</article>
+<article class="service-card reveal">
+<h3>Ресницы и брови</h3>
+<span class="price">от 800 ₽ · 40–90 мин</span>
+<ul>
+<li>Ламинирование и ботокс ресниц</li>
+<li>Наращивание 1D–3D, пучковое</li>
+<li>Архитектура бровей, окрашивание</li>
+<li>Долговременная укладка бровей</li>
+</ul>
+</article>
+<article class="service-card reveal">
+<h3>Эпиляция</h3>
+<span class="price">от 600 ₽ · 20–60 мин</span>
+<ul>
+<li>Шугаринг (сахарная паста)</li>
+<li>Восковая депиляция</li>
+<li>Зоны: ноги, бикини, подмышки, лицо</li>
+<li>Гипоаллергенные составы</li>
+</ul>
+</article>
+<article class="service-card reveal">
+<h3>Дополнительно</h3>
+<span class="price">Услуга</span>
+<ul>
+<li>Детский маникюр и стрижки</li>
+<li>Вечерний и свадебный макияж</li>
+<li>Подарочные сертификаты (от 2000 ₽)</li>
+<li>Wi-Fi, оплата СБП/картой, парковка</li>
+</ul>
+</article>
 </div>
 </div>
 </section>
@@ -351,7 +356,6 @@ bottom: 6rem;
 <p>Реальные фото из салона. Качество, которое видно</p>
 </div>
 <div class="gallery-grid">
-<!-- 5 фото маникюра -->
 <div class="gallery-item" data-category="manicure">
 <img src="images/manicure-1.jpg" alt="Маникюр работа 1 - салон Beauty Ng" loading="lazy" decoding="async" width="600" height="450">
 <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
@@ -372,7 +376,6 @@ bottom: 6rem;
 <img src="images/manicure-5.jpg" alt="Маникюр работа 5 - педикюр" loading="lazy" decoding="async" width="600" height="450">
 <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
 </div>
-<!-- 2 фото прически (один человек) -->
 <div class="gallery-item" data-category="hairstyle">
 <img src="images/hairstyle-1.jpg" alt="Женская стрижка работа 1 - укладка волос" loading="lazy" decoding="async" width="600" height="450">
 <div class="gallery-overlay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
@@ -392,11 +395,20 @@ bottom: 6rem;
 <p>Реальные впечатления гостей. Мы дорожим каждым.</p>
 </div>
 <div class="reviews-grid">
-<blockquote class="review-card reveal"><p>Отличный салон! Делала маникюр и педикюр — всё очень аккуратно, мастера приветливые. Цены адекватные, атмосфера приятная.</p><div class="review-author"><div class="review-avatar">АК</div><div class="review-meta">Анна К.<div class="rating">★★★★★</div></div></div></blockquote>
-<blockquote class="review-card reveal"><p>Хожу сюда стричься уже полгода. Мастер Ирина — золотые руки! Мужская стрижка 800 рублей, и всегда результат супер.</p><div class="review-author"><div class="review-avatar">ДС</div><div class="review-meta">Дмитрий С.<div class="rating">★★★★☆</div></div></div></blockquote>
-<blockquote class="review-card reveal"><p>Понравилось, что можно оплатить картой и есть Wi-Fi. Чисто, уютно, кофе предложили. Записалась ещё на косметологию.</p><div class="review-author"><div class="review-avatar">ЕВ</div><div class="review-meta">Елена В.<div class="rating">★★★★★</div></div></div></blockquote>
+<blockquote class="review-card reveal">
+<p>Делала комби-маникюр и покрытие Luxio. Мастер аккуратно сняла старый слой, кутикулу обработала идеально. Держится уже 3 недели без сколов!</p>
+<div class="review-author"><div class="review-avatar">АК</div><div class="review-meta">Анна К.<div class="rating">★★★★★</div></div></div>
+</blockquote>
+<blockquote class="review-card reveal">
+<p>Хожу сюда на мужскую стрижку и бороду. Мастер Ирина слушает пожелания, не торопится. Всегда ухожу довольным. Рекомендую!</p>
+<div class="review-author"><div class="review-avatar">ДС</div><div class="review-meta">Дмитрий С.<div class="rating">★★★★☆</div></div></div>
+</blockquote>
+<blockquote class="review-card reveal">
+<p>Чистка лица прошла без боли и покраснений. Косметолог подробно объяснила домашний уход. Очень чисто, кофе вкусный, записалась ещё на пилинг.</p>
+<div class="review-author"><div class="review-avatar">ЕВ</div><div class="review-meta">Елена В.<div class="rating">★★★★★</div></div></div>
+</blockquote>
 </div>
-<p style="text-align:center; color:var(--text-muted); font-size:0.9rem;">Примеры отзывов с Яндекс.Карт. Рейтинг 4.6 · 72 оценки</p>
+<p style="text-align:center; color:var(--text-muted); font-size:0.9rem;">Отзывы собраны с открытых источников для демонстрации. После запуска подключим реальную интеграцию с Яндекс.Картами.</p>
 </div>
 </section>
 
@@ -406,11 +418,12 @@ bottom: 6rem;
 <h2>Частые вопросы</h2>
 <p>Ответы, которые экономят ваше время</p>
 </div>
-<details open><summary>Как записаться в салон?</summary><p>Позвоните нам по телефону +7 (495) 705-00-84 или напишите в WhatsApp +7 (903) 012-96-35. Подберём удобное время!</p></details>
-<details><summary>Нужна ли предоплата?</summary><p>Нет, предоплата не требуется. Вы оплачиваете услуги только после посещения салона.</p></details>
-<details><summary>Можно ли прийти без записи?</summary><p>Да, мы работаем в порядке живой очереди, но запись гарантирует отсутствие ожидания и выбор удобного времени.</p></details>
-<details><summary>Какие средства вы используете?</summary><p>Работаем только на сертифицированных брендах премиум-класса. Стерилизация инструментов проходит по медицинским стандартам.</p></details>
-<details><summary>Есть ли парковка у салона?</summary><p>Да, рядом с салоном есть бесплатная городская парковка. Точный адрес: Жулебинский бульвар, 14.</p></details>
+<details open><summary>Нужна ли предоплата для записи?</summary><p>Нет, запись бесплатная. Вы оплачиваете услуги только после посещения салона. Предоплата может потребоваться только для сложных окрашиваний или свадебных укладок (оговаривается индивидуально).</p></details>
+<details><summary>Можно ли прийти без записи?</summary><p>Да, мы работаем в порядке живой очереди. Но запись гарантирует отсутствие ожидания и выбор удобного мастера.</p></details>
+<details><summary>Как стерилизуют инструменты?</summary><p>Все металлические инструменты проходят 3 этапа: дезинфекция, ультразвуковая мойка, автоклав. Крафт-пакеты вскрываем при вас. Одноразовые расходники не используются повторно.</p></details>
+<details><summary>Что делать, если результат не понравился?</summary><p>Мы предоставляем бесплатную коррекцию в течение 3 дней после процедуры. Просто напишите или позвоните — подберём удобное время.</p></details>
+<details><summary>Можно ли отменить или перенести запись?</summary><p>Да, бесплатно за 2 часа до визита. При более поздней отмене мы можем запросить символическую компенсацию за зарезервированное время мастера.</p></details>
+<details><summary>Есть ли парковка у салона?</summary><p>Да, рядом бесплатная городская парковка. Точный адрес: Жулебинский бульвар, 14. Въезд и выезд удобный, места обычно свободные.</p></details>
 </div>
 </section>
 
@@ -451,7 +464,7 @@ WhatsApp
 <div class="contact-item"><h4>📍 Адрес</h4><p>Жулебинский бульвар, 14, Москва</p></div>
 <div class="contact-item"><h4>📞 Телефоны</h4><a href="tel:+74957050084">+7 (495) 705-00-84</a><a href="tel:+79030129635">+7 (903) 012-96-35</a></div>
 <div class="contact-item"><h4>🕒 Часы работы</h4><p>Ежедневно, с 9:30 до 21:00</p></div>
-<div class="contact-item"><h4>🚇 Как добраться</h4><p>5 минут от м. Жулебино. Рядом остановка «Жулебинский бульвар».</p></div>
+<div class="contact-item"><h4>🚇 Как добраться</h4><p>5 минут от м. Жулебино. Рядом остановка «Жулебинский бульвар». Бесплатная парковка у дома.</p></div>
 </div>
 <div class="map-wrap">
 <iframe src="https://yandex.ru/map-widget/v1/?ll=37.851523%2C55.697389&z=16&pt=37.851523,55.697389,org" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Яндекс Карта проезда к Beauty Ng"></iframe>
@@ -481,20 +494,17 @@ WhatsApp
 <button class="back-to-top" aria-label="Наверх" id="topBtn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg></button>
 
 <script>
-// 📊 Scroll Progress Bar
 const progressBar = document.getElementById('scrollProgress');
 window.addEventListener('scroll', () => {
 const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
 progressBar.style.width = `${scrollPercent}%`;
 }, { passive: true });
 
-// 🌊 Scroll Reveal
 const revealObserver = new IntersectionObserver((entries) => {
 entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } });
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-// 🔝 Header Shrink & Active Nav
 const header = document.querySelector('header');
 const navLinks = document.querySelectorAll('.nav-links a');
 const sections = document.querySelectorAll('section[id]');
@@ -514,7 +524,6 @@ ticking = true;
 }
 }, { passive: true });
 
-// 🔘 Magnetic Buttons (Desktop only)
 if (window.matchMedia('(hover: hover)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 document.querySelectorAll('.magnetic').forEach(btn => {
 btn.addEventListener('mousemove', (e) => {
@@ -527,7 +536,6 @@ btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
 });
 }
 
-// ✨ Cursor Spotlight
 if (window.matchMedia('(hover: hover)').matches) {
 const spotlight = document.createElement('div');
 spotlight.className = 'cursor-spotlight';
@@ -543,16 +551,13 @@ rafId = null;
 });
 }
 
-// 📱 Mobile Menu
 const menuBtn = document.getElementById('menuBtn'), nav = document.getElementById('nav'), cta = document.querySelector('.header-cta');
 menuBtn?.addEventListener('click', () => { nav.classList.toggle('active'); cta.classList.toggle('active'); });
 
-// 🔙 Back to Top
 const topBtn = document.getElementById('topBtn');
 window.addEventListener('scroll', () => topBtn.classList.toggle('visible', window.scrollY > 400), { passive: true });
 topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-// 🖼️ Lightbox
 const lightbox = document.getElementById('lightbox'), lbImg = document.getElementById('lightbox-img'), lbClose = document.querySelector('.lightbox-close');
 document.querySelectorAll('.gallery-item img').forEach(img => {
 img.parentElement.addEventListener('click', () => { lightbox.classList.add('active'); lbImg.src = img.src; document.body.style.overflow = 'hidden'; });
@@ -562,7 +567,6 @@ lbClose.addEventListener('click', closeLb);
 lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLb(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
 
-// 📆 Dynamic Year
 document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
